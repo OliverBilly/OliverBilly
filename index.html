@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-
 </head>
 <body>
     <nav class="nav">
@@ -77,35 +75,34 @@
     <section id="web-projects" class="projects">
         <h2 class="section-title">Web Projects</h2>
         <div class="project-grid">
-            
-            <a href="https://github.com/OliverBilly/Web-Furniture" target="_blank" class="project-link-wrapper">
-                <div class="project-card">
-                    <div class="project-img">
-                        <img src="img/Pertama.png" alt="Project 1">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Website Furniture</h3>
-                        <p>Web site pertama yang saya buat. Klik untuk melihat di GitHub.</p>
-                    </div>
-                </div>
-            </a>
-
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/Imperial Wheels.png" alt="Project 2">
-                </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Website Furniture" 
+                 data-img="Web Porto 1.png" 
+                 data-description="Website furniture ini adalah proyek pertama saya untuk melatih kemampuan dasar HTML & CSS.">
+                <div class="project-img"><img src="Web Porto 1.png" alt="Project 1"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Imperial Wheels</h3>
-                    <p>Sebuah konsep website untuk penjualan mobil secara online.</p>
+                    <h3 class="project-title">Website Furniture</h3>
+                    <p>Web site pertama yang saya buat.</p>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/Porto.png" alt="Project 3">
+            <div class="project-card js-modal-trigger" 
+                 data-title="Imperial Wheels" 
+                 data-img="img/Imperial Wheels.png" 
+                 data-description="Sebuah konsep website untuk penjualan mobil secara online dengan desain yang modern dan antarmuka yang bersih.">
+                <div class="project-img"><img src="img/Imperial Wheels.png" alt="Project 2"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Imperial Wheels</h3>
+                    <p>Sebuah konsep website untuk penjualan mobil.</p>
                 </div>
+            </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Bio Data Web" 
+                 data-img="img/Porto.png" 
+                 data-description="Proyek website sederhana yang menampilkan biodata diri secara ringkas, dibuat untuk menguji layouting CSS.">
+                <div class="project-img"><img src="img/Porto.png" alt="Project 3"></div>
                 <div class="project-content">
                     <h3 class="project-title">Bio Data Web</h3>
-                    <p>Proyek website sederhana yang menampilkan biodata diri.</p>
+                    <p>Proyek website sederhana biodata diri.</p>
                 </div>
             </div>
         </div>
@@ -114,31 +111,64 @@
     <section id="design-projects" class="projects">
         <h2 class="section-title">Design Projects</h2>
         <div class="project-grid">
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/design-1.png" alt="Design Project 1">
-                </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Design Flyer" 
+                 data-img="Portofolio Design 1.png" 
+                 data-description="Desain flyer untuk mempromosikan acara Natal di gereja, dibuat agar menarik dan informatif bagi jemaat.">
+                <div class="project-img"><img src="Portofolio Design 1.png" alt="Design Project 1"></div>
                 <div class="project-content">
-                    <h3 class="project-title">UI/UX Aplikasi Mobile</h3>
-                    <p>Desain antarmuka (UI) dan pengalaman pengguna (UX) untuk aplikasi pemesanan makanan.</p>
+                    <h3 class="project-title">Design Flyer</h3>
+                    <p>Desain flyer acara Natal di gereja.</p>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/design-2.png" alt="Design Project 2">
-                </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Design Flyer" 
+                 data-img="Portofolio Design 2.png" 
+                 data-description="Desain flyer untuk jadwal ibadah rutin di gereja, dengan fokus pada keterbacaan dan kejelasan informasi.">
+                <div class="project-img"><img src="Portofolio Design 2.png" alt="Design Project 2"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Branding & Logo Kopi</h3>
-                    <p>Pembuatan identitas visual dan logo untuk sebuah brand kopi lokal.</p>
+                    <h3 class="project-title">Design Flyer</h3>
+                    <p>Design flyer ibadah gereja.</p>
                 </div>
             </div>
-            <div class="project-card">
-                <div class="project-img">
-                    <img src="img/design-3.png" alt="Design Project 3">
-                </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Design Feed Instagram" 
+                 data-img="img/Portofolio Design 3.png" 
+                 data-description="Desain feed untuk Instagram sebuah brand pakaian, dirancang untuk menciptakan tampilan yang kohesif dan menarik secara visual.">
+                <div class="project-img"><img src="img/Portofolio Design 3.png" alt="Design Project 3"></div>
                 <div class="project-content">
-                    <h3 class="project-title">Poster Event Musik</h3>
-                    <p>Desain poster untuk promosi acara festival musik dengan gaya retro.</p>
+                    <h3 class="project-title">Design Feed Instagram</h3>
+                    <p>Design Feed Instagram Product Baju.</p>
+                </div>
+            </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Company Profile Design" 
+                 data-img="img/Portofolio Design 4.png" 
+                 data-description="Desain untuk company profile sebuah startup teknologi, menonjolkan visi dan misi perusahaan secara visual.">
+                <div class="project-img"><img src="img/Portofolio Design 4.png" alt="Design Project 4"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Company Profile Design</h3>
+                    <p>Desain company profile untuk startup teknologi.</p>
+                </div>
+            </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Social Media Campaign" 
+                 data-img="img/Portofolio Design 5.png" 
+                 data-description="Rangkaian desain visual untuk kampanye di media sosial, termasuk post, story, dan banner.">
+                <div class="project-img"><img src="img/Portofolio Design 5.png" alt="Design Project 5"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Social Media Logo</h3>
+                    <p>Desain visual untuk logo brand.</p>
+                </div>
+            </div>
+            <div class="project-card js-modal-trigger" 
+                 data-title="Infographic Design" 
+                 data-img="img/Portofolio Design 6.png" 
+                 data-description="Desain infografis untuk menyajikan data kompleks menjadi informasi yang mudah dipahami dan menarik.">
+                <div class="project-img"><img src="img/Portofolio Design 6.png" alt="Design Project 6"></div>
+                <div class="project-content">
+                    <h3 class="project-title">Infographic Design</h3>
+                    <p>Desain infografis untuk penyajian data.</p>
                 </div>
             </div>
         </div>
@@ -199,5 +229,17 @@
     <footer class="footer">
         <p>&copy; 2025 Faisal Billijuan Oliver. All rights reserved.</p>
     </footer>
+
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" src="" alt="Project Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

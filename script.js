@@ -1,20 +1,51 @@
-window.addEventListener("scroll", function () {
-    const nav = document.querySelector(".nav");
-    if (window.scrollY > 50) {
-        nav.style.background = "rgba(18, 18, 18, 0.9)";
-    } else {
-        nav.style.background = "rgba(18, 18, 18, 0.8)";
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Elemen-elemen Modal
+    const modalOverlay = document.getElementById('projectModal');
+    const modalImage = document.getElementById('modalImage');
+    const modalTitle = document.getElementById('modalTitle');
+    const modalDescription = document.getElementById('modalDescription');
+    const closeModalButton = document.querySelector('.modal-close');
+
+    // Semua project card yang bisa diklik
+    const projectCards = document.querySelectorAll('.js-modal-trigger');
+
+    // Fungsi untuk membuka modal
+    function openModal(card) {
+        // Ambil data dari atribut data-*
+        const title = card.dataset.title;
+        const imgSrc = card.dataset.img;
+        const description = card.dataset.description;
+
+        // Isi konten modal dengan data dari card
+        modalTitle.textContent = title;
+        modalImage.src = imgSrc;
+        modalDescription.textContent = description;
+
+        // Tampilkan modal
+        modalOverlay.classList.add('modal-active');
     }
+
+    // Fungsi untuk menutup modal
+    function closeModal() {
+        modalOverlay.classList.remove('modal-active');
+    }
+
+    // Tambahkan event listener ke setiap project card
+    projectCards.forEach(card => {
+        card.addEventListener('click', () => {
+            openModal(card);
+        });
+    });
+
+    // Tambahkan event listener untuk tombol close
+    closeModalButton.addEventListener('click', closeModal);
+
+    // Tambahkan event listener untuk menutup modal saat klik di luar konten
+    modalOverlay.addEventListener('click', (event) => {
+        if (event.target === modalOverlay) {
+            closeModal();
+        }
+    });
+
 });
-
-document.addEventListener("DOMContentLoaded", function () {
-    const text = document.querySelector(".hero-content p:last-child");
-    const words = ["Welcome!", "Selamat Datang!", "Bienvenido!", "欢迎!", "أهلا بك!", "ようこそ!"];
-    let index = 0;
-
-    setInterval(() => {
-        text.textContent = words[index];
-        index = (index + 1) % words.length;
-    }, 2000);
-});
-
