@@ -523,3 +523,43 @@ body{
         grid-template-columns: 1fr;
     }
 }
+/* ==================
+   VIDEO PORTFOLIO
+   ================== */
+.video-portfolio {
+    padding: 5rem 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    text-align: center;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.video-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+}
+
+.video-link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #ff3366, #ff6b6b, #4ecdc4, #45b7d1);
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 51, 102, 0.5);
+}
